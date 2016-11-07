@@ -63,11 +63,16 @@ h1 {
 h2 {
     font-size: 18px;
     color: #fff68d;
+    margin-bottom: 15px;
 }
 
-article {}
+article {
+    margin-bottom: 40px;
+}
 
-article p {}
+article p {
+    margin-bottom: 0;
+}
 
 
 /* Header
@@ -76,6 +81,7 @@ article p {}
 .header {
     position: relative;
     height: 158px;
+    margin-bottom: 40px;
 }
 
 .header .logo {
@@ -158,8 +164,6 @@ article p {}
 
 .header .lang-item a {
     display: inline-block;
-    vertical-align: middle;
-    margin-right: 16px;
     color: #ffffff;
 }
 
@@ -203,13 +207,65 @@ article p {}
     padding: 0 0 76px;
 }
 
+.article {
+    position: relative;
+    padding-left: 144px;
+}
+
+.article img {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    left: 20px;
+    top: 50%;
+    margin-top: -32px; 
+}
+
 
 /* Footer
 -----------------------------------------------------------------------------*/
 
 .footer {
+    position: relative;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(215, 182, 73, 0.44);
     width: 1000px;
     margin: -76px auto 0;
+    padding: 40px 20px 0;
     height: 76px;
+    color: #f9da5a
+}
+
+.footer .footermenu {
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    color: #ffffff;
+}
+
+.footer .footermenu .menu-list {
+    list-style: none;
+}
+
+.footer .footermenu .menu-item {
     position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 16px;
+}
+
+.footer .footermenu .menu-item a {
+    color: inherit;
+}
+
+.footer .footermenu .menu-item::before {
+    content: '|';
+    position: absolute;
+    left: -12px;
+    top: 0;
+    color: #ffffff;
+}
+
+.footer .footermenu .menu-item:first-child::before {
+    display: none;
 }
