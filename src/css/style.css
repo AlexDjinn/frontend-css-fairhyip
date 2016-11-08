@@ -58,6 +58,7 @@ h2 {
 h1 {
     font-size: 22px;
     color: #ead4aa;
+    margin-bottom: 16px;
 }
 
 h2 {
@@ -203,6 +204,20 @@ article p {
 /* Middle
 -----------------------------------------------------------------------------*/
 
+.promo {
+    background: url(../images/bg_about.png) no-repeat 56px center, url(../images/bg_promo.png) repeat 0 0;
+    border-radius: 10px;
+    display: block;
+    padding: 20px;
+    padding-left: 144px;
+    margin-bottom: 54px;
+    line-height: 22px;
+    color: #f9da5a;
+    font-size: 14px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
 .content {
     padding: 0 0 76px;
 }
@@ -218,7 +233,7 @@ article p {
     height: auto;
     left: 20px;
     top: 50%;
-    margin-top: -32px; 
+    margin-top: -32px;
 }
 
 
